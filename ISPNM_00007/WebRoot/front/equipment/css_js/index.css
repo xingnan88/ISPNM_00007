@@ -1,0 +1,85 @@
+#main{
+	width: 1020px;
+	height: 960px;
+	border: 1px solid #123456;
+	margin: 5px auto;
+	background-color: #ffffff;
+	font-size: 14px;
+}/*245 755*/
+
+#location{
+	margin: 5px;
+	border-bottom: 1px solid rgb(160,179,203);
+}
+
+#left{
+	width: 245px;
+	height: 650px;
+	float: left;
+}
+#left>div,#left>table { /*border: 2px solid rgb(253, 182, 56);*/
+	border: 1px solid rgb(255, 55, 20);
+}
+
+#left>div {
+	overflow: hidden;
+	margin: 5px 5px 20px 5px;
+	width: 241px;
+}
+
+#right{
+	width: 755px;
+	height: 900px;
+	float: right;
+}
+span.i2{
+	display: inline-table;
+	width: 100px;
+	height: 20px;
+	background-image: url('../../images/i10.png');
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+	margin: 2px 0px 2px 2px;
+	padding-left: 11px;
+	overflow: hidden;
+}
+
+/*categories*/
+.categoryDiv{
+	width: 510px;
+	border:1px solid rgb(160,179,203);/*248,218,213*/
+	margin: 5px 0 15px 0;
+}
+.categoryDiv .titlebg2{
+	height: 20px;
+	padding: 1px 0 0 6px;
+}
+.categoryDiv>div{
+	font-size:15px;
+	color: #ffffff;
+	margin: 0px;
+	vertical-align: middle;
+}
+ .tab{
+	display:block;
+	width: 65px;
+	background-image: url('../../../images/tab-bg.png');
+	background-repeat: repeat-x;
+	color:#ffffff;
+	margin-top:0;
+	background-color: #888888;
+	font-family:"ºÚÌå";
+	padding-top:2px;
+	padding-left:5px;
+	border-width:0 1px 0 1px; 
+	border: 1px solid white;
+}
+.categoryDiv a{
+	display: inline-table;
+	width: 110px;
+	margin: 3px 6px;
+	border-bottom: 1px dashed rgb(142,144,147);
+}
+.categoryDiv a:hover {
+	background-color: rgb(242,244,247);
+}

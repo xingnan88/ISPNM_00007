@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<constant name="struts.objectFactory" value="spring" />
+
+	<constant name="struts.i18n.encoding" value="gb2312"></constant>
+
+	<package name="metaInfo" namespace="/front/metaInfo"
+		extends="struts-default">
+
+		<!-- 前台首页 -->
+		<action name="metalInfo" class="jxust.isp4nm.action.MetalInfoAction">
+			<result name="leftFore">/front/metaInfo/metalLeft.jsp</result>
+		</action>
+		
+		<action name="index" class="jxust.isp4nm.action.MetalInfoAction">
+			<result name="rightFore">/front/metaInfo/metalRight.jsp</result>
+		</action>
+		<action name="Search" class="jxust.isp4nm.action.MetalInfoAction">
+			<result name="SimpleSearch">index!rightFore.action</result>
+		</action>
+	</package>
+
+</struts>    

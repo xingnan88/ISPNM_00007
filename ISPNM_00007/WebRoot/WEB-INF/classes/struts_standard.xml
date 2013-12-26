@@ -1,0 +1,19 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.action.excludePattern" value="/fckeditor/editor/filemanager/connectors/.*"/>
+	<constant name="struts.devMode" value="false"/>
+
+    <package name="standard" namespace="/standard" extends="struts-default">
+        <action name="standardAction" class="standardAction">
+        
+        	<result name="success">${url}</result>
+        	
+            <result name="redirectAction" type="redirectAction">
+            	<param name="actionName">${actionName}</param>
+            	<param name="method">${actionMethod}</param>
+            </result>
+        </action>
+    </package>
+</struts>

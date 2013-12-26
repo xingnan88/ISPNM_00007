@@ -1,0 +1,286 @@
+.index {
+	width: 1020px;
+	margin: auto;
+}
+
+.index .title {
+	border-top: 1px solid #abacab;
+	border-left: 1px solid #abacab;
+	background: url("images/button.png") repeat-x white;
+}
+
+.index h2 {
+	color: green;
+	margin: 0px;
+}
+
+.index .head {
+	height: 125px;
+	background-color: white;
+	margin: 0 auto;
+	background-image: url('images/isp4nm-banner70.png');
+	background-repeat: no-repeat;
+	background-position: 3px 10px;
+}
+
+.index .content {
+	min-height: 600px;
+	background: white;
+	width: 100%;
+	margin: auto;
+}
+
+.index .content .tools {
+	background: white;
+	float: right;
+	padding-bottom: 2px;
+}
+
+.index .content #switch {
+	color: green;
+	float: left;
+	width: 10px;
+	margin-left: -10px;
+	cursor: pointer;
+	background: red;
+}
+
+.index .content .leftList {
+	height: auto;
+	width: 25%;
+	float: left;
+}
+
+.index .content .leftList div ul {
+	margin: 0px;
+	margin-left: 5px;
+}
+
+.index .content .leftList div ul li {
+	list-style-type: circle;
+	padding: 5px;
+}
+
+.index .content .rightList {
+	height: auto;
+	width: 24.999%;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.index .content .rightAd {
+	height: 220px;
+	width: 24.999%;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.index .content .leftTopList {
+	height: auto;
+	width: 75%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.index .content .mainbody {
+	text-align: center;
+	height: 600px;
+	width: 75%;
+	float: left;
+	background: #888;
+}
+
+.index .content .mainbody #nav {
+	position: absolute;
+	font-size: 1.5em;
+	color: green;
+	text-align: center;
+	padding: 5px 5px 0px 13px;
+	background: url("images/flag.png") no-repeat white;
+	cursor: pointer;
+}
+
+.index .tail {
+	width: 100%;
+	margin: 20px;
+	text-align: center;
+	color: rgb(51, 15, 255);;
+	font-size: 12px;
+	border: none;
+}
+
+.formTr {
+	width: 90%;
+	height: 30px;
+	margin: auto;
+	padding-top: 5px;
+}
+
+.formTdLabel {
+	width: 33%;
+	float: left;
+	text-align: right;
+	padding: 8px 3px 5px 3px;
+	cursor: default;
+}
+
+.formTdLabelLeft {
+	text-align: left;
+	padding: 8px 3px 5px 3px;
+}
+
+.formTdLabelField {
+	padding: 8px 3px 5px 3px;
+}
+
+.formTdField {
+	padding: 2px 0px 5px 0px;
+}
+
+.formTrArea {
+	width: 90%;
+	min-height: 30px;
+	margin: auto;
+	padding-top: 5px;
+}
+
+.formTdArea {
+	padding: 2px 0px 5px 0px;
+}
+
+.formTdButton {
+	padding: 0px 0px 5px 30%;
+}
+
+.body {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.body .floatLeft {
+	float: left;
+	padding-left: 10px;
+}
+
+.body .floatRight {
+	float: right;
+	padding-right: 10px;
+}
+
+.body>.title {
+	width: 100%;
+	margin: auto;
+	background: white;
+}
+
+.body>.title>h2 {
+	text-align: center;
+	color: green;
+	margin: 0px;
+}
+
+.body .detail {
+	width: 100%;
+	margin: auto;
+	background: white;
+}
+
+.body .detail .show {
+	width: 95%;
+	margin: auto;
+	padding-left: 15px;
+	padding-ring: 10px;
+	background: white;
+	border: 1px solid #abacab;
+}
+
+.body .detail .show h4 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	color: #4b6b70;
+}
+
+.body .detail .show label {
+	margin-left: 30px;
+	margin-bottom: 5px;
+	line-height: 150%;
+	color: #116c00;
+}
+
+.body>.detail>.info {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.body .detail .picShow {
+	width: 80%;
+	height: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.body .detail .title {
+	text-align: center;
+	height: 75px;
+	margin: auto;
+}
+
+.body .detail .typeChoice {
+	padding-left: 25%;
+	height: 18px;
+	margin: auto;
+	cursor: pointer;
+}
+
+.body .detail .entrance {
+	padding-left: 25%;
+	height: 100px;
+	margin: auto;
+}
+
+.body .detail .provinceLink {
+	width: 80%;
+	height: 260px;
+	margin: auto;
+	text-align: center;
+}
+
+.body .message {
+	width: 100%;
+	height: 20px;
+	background: white;
+	margin: auto;
+	padding-top:10px;
+	text-align:center;
+	color:green;
+}
+
+.body .message span {
+	padding-left: 150px;
+}
+
+.mark {
+	float: right;
+	width: 25px;
+	height: 25px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.markConnect {
+	background: url("images/connect-def.png") no-repeat;
+}
+
+.markConnect:hover {
+	background: url("images/connect-hover.png") no-repeat;
+}
+
+.markDisconnect {
+	background: url("images/disconnect-def.png") no-repeat;
+}
+
+.markDisconnect:hover {
+	background: url("images/disconnect-hover.png") no-repeat;
+}

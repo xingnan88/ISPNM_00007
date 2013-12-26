@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+	<firstType name="矿业">
+		<type>采矿设备</type>
+		<type>选矿设备</type>
+		<type>粉磨设备</type>
+		<type>破碎设备</type>
+		<type>煤矿支护设备</type>
+		<type>提升贮运设备</type>
+		<type>煤矿安全设备</type>
+		<type>地矿勘探设备</type>
+		<type>煤炭加工设备</type>
+	</firstType>
+	<firstType name="冶金">
+		<type>炼铁设备</type>
+		<type>炼钢设备</type>
+		<type>轧钢设备</type>
+		<type>传动设备</type>
+		<type>分析测试</type>
+		<type>金属处理</type>
+		<type>耐材炉窑</type>
+		<type>通用设备</type>
+	</firstType>
+	<firstType name="工程机械">
+		<type>铲土装载机械</type>
+		<type>拖拉机械</type>
+		<type>路面机械</type>
+		<type>工程机械</type>
+	</firstType>
+	<firstType name="自动化">
+		<type>控制系统</type>
+		<type>控制系统</type>
+		<type>工控机</type>
+		<type>运动伺服</type>
+		<type>机器视觉</type>
+		<type>工业以太网</type>
+		<type>现场总线</type>
+	</firstType>
+</types>

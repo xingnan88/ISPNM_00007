@@ -1,0 +1,22 @@
+.float {
+	width: 60px;
+	position: fixed;
+	background-color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+}
+.showLogin{
+	top: 130px;
+}
+.showContact{
+	top: 190px;
+}
+.showService{
+	top: 250px;
+}
+.left{
+	left: 0px;
+}
+.right{
+	right: 0px;
+}

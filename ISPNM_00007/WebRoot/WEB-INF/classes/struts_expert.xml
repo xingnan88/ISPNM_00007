@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="gbk"></constant>
+	<!-- 上传的全部图片的最大限制-->
+ 	<constant name="struts.multipart.saveDir" value="D:\temp"></constant>  
+	<package name="expert_front" extends="struts-default"
+		namespace="/front/expert">
+		<action name="expert_*" class="expertAction" method="{1}">
+			<result name="findByField">
+				/front/expert/right.jsp
+			</result>
+			<result name="findAll">
+				/front/expert/expertList.jsp
+			</result>
+			<result name="find">
+				/front/expert/right1.jsp
+			</result>
+			<result name="findById">
+				/front/expert/expertDetail.jsp
+			</result>
+			<result name="input">
+				/front/expert/input.jsp
+			</result>
+				<result name="no">
+				/front/expert/no.jsp
+			</result>
+		</action>
+	</package>
+	<package name="expert" extends="struts-default" namespace="/back/expert">
+		<action name="expert_*" class="expertActionBack" method="{1}">
+			<result name="add">
+				/back/expert/add.jsp
+			</result>
+				<result name="input">
+				/back/expert/input.jsp
+			</result>
+			<result name="goUpdate">
+				/back/expert/update.jsp
+			</result>
+			<result name="delete">
+				/back/expert/delete.jsp
+			</result>
+			<result name="findAll">
+				/back/expert/browser.jsp
+			</result>
+			<result name="testSave">
+				/back/expert/testSave.jsp
+			</result>
+			<result name="update">
+				/back/expert/success_update.jsp
+			</result>
+			<result name="browser">
+				/back/expert/browserExpert.jsp
+			</result>
+			<result name="piliangDel">
+				/back/expert/delete.jsp
+			</result>
+			<result name="find">
+				/back/expert/findResult.jsp
+			</result>
+			<result name="no">
+				/back/expert/no.jsp
+			</result>
+			<result name="findGaoji">
+				/back/expert/findGaojiResult.jsp
+			</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="gb2312"></constant>
+	<constant name="struts.multipart.saveDir" value="c:\"></constant>
+	<!--
+		上传视频的临时文件存放
+	-->
+
+	<constant name="struts.multipart.maxSize" value="104857600" />
+	<!--
+		上传视频的最大值100M
+	-->
+
+
+	
+	<include file="struts_patent.xml"></include>
+	<include file="struts_company.xml"></include>
+	<include file="struts_standard.xml"></include>
+	<include file="struts_achieve.xml"></include>
+	<include file="struts_article.xml"></include>
+    <include file="struts_expert.xml"></include>
+    <include file="struts_metalInfo.xml"></include>
+    <package name="jxustmppFront" namespace="/front/jxustmpp"
+		extends="struts-default">
+
+		<!-- 前台首页 -->
+		<action name="list" class="mppAction" method="findAll">
+			<result name="success">/front/jxustmpp/mpplist.jsp</result>
+		</action>
+		<!-- 播放采矿视频 -->
+		<action name="play" class="mppAction" method="playById">
+			<result name="success">/front/jxustmpp/mppplay.jsp</result>
+			<result name="error">/front/jxustmpp/error.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="jxustmppBack" namespace="/back/jxustmpp"
+		extends="struts-default" >
+		<!-- 上传视频 -->
+		<action name="upload" class="uploadAction">
+		    
+			<result name="success">/back/jxustmpp/complete.jsp</result>
+			<param name="uploadPath">upload/</param><!-- 上传视频存放路径 -->
+			<param name="ffmpegPath">tools/ffmpeg.exe</param><!-- 视频截图工具 -->
+			<param name="imgPath">upload/images/</param><!-- 上传视频截图存放路径 -->
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+		<!-- 添加采矿方法 -->
+		<action name="add" class="mppAction" method="add">
+			<result name="success">/back/jxustmpp/upload.jsp</result>
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+		<action name="mpp_*" class="mppAction" method="{1}">
+			<result name="success" type="redirect">listmpp.action</result>
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+		<!-- 后台查看采矿方法 -->
+		<action name="listmpp" class="mppAction" method="findAll">
+			<result name="success">/back/jxustmpp/list.jsp</result>
+		</action>
+
+		<!-- 获得单个采矿方法的信息 -->
+		<action name="mpp*" class="mppAction" method="findById">
+			<result name="success">/back/jxustmpp/{1}.jsp</result>
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+	</package>
+    
+    
+	<package name="back" namespace="/back" extends="struts-default">
+
+		<action name="login" class="adminAction" method="login">
+			<result name="success" type="redirect">/back/index.jsp</result>
+			<result name="input">/back/login.jsp</result>
+			<result name="error">/back/login.jsp</result>
+		</action>
+		<action name="nologin">
+			<result type="redirect">/back/login.jsp</result>
+		</action>
+
+	</package>
+    
+    <package name="index" namespace="/Index" extends="struts-default">
+	  <action name="index" class="jxust.isp4nm.action.IndexAction" method="index">
+	     <result>/defaultIndex.jsp</result>
+	  </action>
+	</package>
+    
+	<package name="technews" namespace="/front/technews" extends="struts-default">
+		<action name="*_*" class="jxust.isp4nm.action.{1}Action"
+			method="{2}">
+			<result>/front/technews/{1}_{2}.jsp</result>
+			<result name="input">/front/technews/{1}_{2}.jsp</result>
+		</action>
+	</package>
+
+	<package name="technews_admin" namespace="/back/technews"
+		extends="struts-default">
+		<action name="*_*" class="jxust.isp4nm.action.{1}Action"
+			method="{2}">
+			<result>/back/technews/{1}_{2}.jsp</result>
+			<result name="input">/back/technews/{1}_{2}.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="equipment" namespace="/front/equipment" extends="struts-default">
+		<action name="*" class="equipmentAction" method="{1}">
+			<exception-mapping result="NoMethod"
+				exception="java.lang.NoSuchMethodException" />
+			<result name="list">list.jsp</result>
+			<result name="view">view.jsp</result>
+			<result name="NoMethod" type="redirect">index.jsp</result>
+		</action>
+	</package>
+
+	<package name="equipment_admin" namespace="/back/equipment"
+		extends="json-default">
+		
+		<action name="*" class="equipmentAction" method="{1}">
+			
+			<result name="view">{1}.jsp</result>
+			<result name="list">list.jsp</result>
+			<result name="success">success.jsp</result>
+			<result name="login" type="redirect">index.jsp</result>
+			<result name="logout">logout.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+
+	</package>
+
+
+</struts>    

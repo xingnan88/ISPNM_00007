@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="feature" extends="struts-default">
+		<action name="AchieveList" class="jxust.isp4nm.action.feature.AchieveListAction">
+			<result name="achievelist">/back/feature/AchieveList.jsp</result>
+			<result name="list">/back/feature/AchieveList.jsp</result>
+			<result name="achievelistFore">/front/feature/AchieveList.jsp</result>
+			<result name="listFore">/front/feature/AchieveList.jsp</result>
+		</action>
+
+		<action name="AddAchieve"
+			class="jxust.isp4nm.action.feature.AddAchieveAction">
+			<result name="addAchieve">/AchieveList!list.action</result>
+			<result name="inputaward">/back/feature/AddAward.jsp</result>
+			<result name="inputresearch">/back/feature/AddResearch.jsp</result>
+			<result name="inputpaper">/back/feature/AddPaper.jsp</result>
+			<result name="inputpatent">/back/feature/AddPatent.jsp</result>
+			<result name="inputmaterial">/back/feature/AddMaterial.jsp</result>
+			<result name="inputFore">/front/feature/AddAchieve.jsp</result>
+		</action>
+
+		<action name="BeforeUpdateAchieve"
+			class="jxust.isp4nm.action.feature.BefUpdAchAction">
+			<result name="awardone">/back/feature/UpdateAward.jsp</result>
+			<result name="researchone">/back/feature/UpdateResearch.jsp</result>
+			<result name="paperone">/back/feature/UpdatePaper.jsp</result>
+			<result name="patentone">/back/feature/UpdatePatent.jsp</result>
+			<result name="materialone">/back/feature/UpdateMaterial.jsp</result>
+		</action>
+		<action name="UpdateAchieve"
+			class="jxust.isp4nm.action.feature.UpdateAchieveAction">
+			<result name="success">/AchieveList!list.action</result>
+			<result name="inputaward">/back/feature/BeforeUpdateAchieve</result>
+			<result name="inputresearch">/back/feature/BeforeUpdateAchieve</result>
+			<result name="inputpaper">/back/feature/BeforeUpdateAchieve</result>
+			<result name="inputpatent">/back/feature/BeforeUpdateAchieve</result>
+			<result name="inputmaterial">/back/feature/BeforeUpdateAchieve</result>
+		</action>
+
+		<action name="DeleteAchieve" class="jxust.isp4nm.action.feature.DeleteAchieveAction">
+			<result>/AchieveList!list.action</result>
+		</action>
+
+		<action name="DeleteAchieveMore"
+			class="jxust.isp4nm.action.feature.DeleteAchieveMoreAction">
+			<result>/AchieveList!list.action</result>
+			<result name="input">/AchieveList!list.action</result>
+		</action>
+
+		<action name="SeniorSearchAchieve"
+			class="jxust.isp4nm.action.feature.SeniorSearchAchieveAction">
+			<result name="seniorSearch">/back/feature/AchieveList.jsp</result>
+			<result name="input">/back/feature/SeniorSearchAchieve.jsp</result>
+			<result name="seniorSearchFore">/front/feature/AchieveList.jsp</result>
+			<result name="inputFore">/front/feature/SeniorSearchAchieve.jsp</result>
+		</action>
+
+		<action name="SearchAchieve"
+			class="jxust.isp4nm.action.feature.SearchAchieveAction">
+			<result name="searchAchieve">/back/feature/AchieveList.jsp</result>
+			<result name="searchAchieveFore">/front/feature/AchieveList.jsp</result>
+		</action>
+
+		<action name="AchieveDetail"
+			class="jxust.isp4nm.action.feature.AchieveDetailAction">
+			<result name="awardone">/back/feature/AwardDetail.jsp</result>
+			<result name="researchone">/back/feature/ResearchDetail.jsp</result>
+			<result name="paperone">/back/feature/PaperDetail.jsp</result>
+			<result name="patentone">/back/feature/PatentDetail.jsp</result>
+			<result name="materialone">/back/feature/MaterialDetail.jsp</result>
+			
+			<result name="awarddetail">/front/feature/AwardDetail.jsp</result>
+			<result name="researchdetail">/front/feature/ResearchDetail.jsp</result>
+			<result name="paperdetail">/front/feature/PaperDetail.jsp</result>
+			<result name="patentdetail">/front/feature/PatentDetail.jsp</result>
+			<result name="materialdetail">/front/feature/MaterialDetail.jsp</result>
+			
+			<result name="input">/front/feature/AchieveDetail.jsp</result>
+		</action>
+		
+		<action name="JudgeJumpPageAch"
+			class="jxust.isp4nm.action.feature.JudgeJumpPageAchAction">
+			<result name="list">/back/feature/AchieveList.jsp</result>
+			<result name="awardone">/back/feature/AwardDetail.jsp</result>
+			<result name="researchone">/back/feature/ResearchDetail.jsp</result>
+			<result name="paperone">/back/feature/PaperDetail.jsp</result>
+			<result name="patentone">/back/feature/PatentDetail.jsp</result>
+			<result name="materialone">/back/feature/MaterialDetail.jsp</result>
+			<result name="input">/back/feature/EnterAchieveName.jsp</result>
+		</action>
+
+		<action name="JudgeJumpPageAch2"
+			class="jxust.isp4nm.action.feature.JudgeJumpPageAch2Action">
+			<result name="list">/back/feature/AchieveList.jsp</result>
+			<result name="awardone">/back/feature/UpdateAward.jsp</result>
+			<result name="researchone">/back/feature/UpdateResearch.jsp</result>
+			<result name="paperone">/back/feature/UpdatePaper.jsp</result>
+			<result name="patentone">/back/feature/UpdatePatent.jsp</result>
+			<result name="materialone">/back/feature/UpdateMaterial.jsp</result>
+			<result name="input">/back/feature/EnterAchieveName.jsp</result>
+		</action>
+
+		<action name="GetYear"
+			class="jxust.isp4nm.action.feature.GetYearAction">
+			<result name="getyear">/back/feature/SeniorSearchAchieve.jsp</result>
+			<result name="getyearFore">/front/feature/SeniorSearchAchieve.jsp</result>
+		</action>
+	</package>
+	
+</struts>

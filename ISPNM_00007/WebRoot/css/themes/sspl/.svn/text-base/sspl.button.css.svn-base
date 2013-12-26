@@ -1,0 +1,3 @@
+.btnDisabled {
+	color: #ddd;
+}

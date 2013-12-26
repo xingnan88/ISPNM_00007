@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="gb2312"></constant>
+	<constant name="struts.multipart.maxSize" value="10485760" />
+	
+	<package name="patent" namespace="/front/patent" extends="struts-default">
+		<action name="*_*" class="jxust.isp4nm.action.{1}Front" method="{2}">
+			<result>/front/patent/{1}_{2}.jsp</result>
+			<result name="input">/front/patent/{1}_{2}.jsp</result>
+		</action>
+	</package>
+
+	<package name="patent_admin" namespace="/back/patent" extends="struts-default">
+		<action name="*_*" class="jxust.isp4nm.action.{1}Action" method="{2}">
+			<result>/back/patent/{1}_{2}.jsp</result>
+			<result name="input">/back/patent/{1}_{2}.jsp</result>
+			<result name="error">/back/patent/error.jsp</result>
+		</action>
+	</package>
+	
+	
+
+</struts>    

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="article" extends="struts-default">
+		<action name="AddArticle"
+			class="jxust.isp4nm.action.article.AddArticleAction">
+			<result name="addArticle">/ArticleList!list2.action</result>
+			<result name="input">/back/feature/AddArticle.jsp</result>
+			<result name="inputFore">/front/article/AddArticle.jsp</result>
+		</action>
+		
+		<action name="ArticleList" class="jxust.isp4nm.action.article.ArticleListAction">
+			<result name="list">/back/article/ArticleList.jsp</result>
+			<result name="list2">/back/article/ArticleList.jsp</result>
+			<result name="listFore">/front/article/ArticleList.jsp</result>
+		</action>
+		
+		<action name="ArticleDetail" class="jxust.isp4nm.action.article.ArticleDetailAction">
+			<result name="detail">/back/article/ArticleDetail.jsp</result>
+			<result name="detailFore">/front/article/ArticleDetail.jsp</result>
+		</action>
+		
+		<action name="JudgeJumpPageArt"
+			class="jxust.isp4nm.action.article.JudgeJumpPageArtAction">
+			<result name="list">/back/article/ArticleList.jsp</result>
+			<result name="searchone">/back/article/ArticleDetail.jsp</result>
+			<result name="updateone">/back/article/UpdateArticle.jsp</result>
+			<result name="input">/back/article/EnterArticleName.jsp</result>
+		</action>
+		
+		<action name="BeforeUpdateArticle"
+			class="jxust.isp4nm.action.article.BefUpdArtAction">
+			<result>/back/article/UpdateArticle.jsp</result>
+		</action>
+		
+		<action name="UpdateArticle"
+			class="jxust.isp4nm.action.article.UpdateArticleAction">
+			<result>/ArticleList!list2.action</result>
+			<result name="input">/back/article/BeforeUpdateArticle</result>
+		</action>
+		
+		<action name="SearchArticle"
+			class="jxust.isp4nm.action.article.SearchArticleAction">
+			<result name="searchArticle">/back/article/ArticleList.jsp</result>
+			<result name="searchArticleFore">/front/article/ArticleList.jsp</result>
+		</action>
+		
+		<action name="SeniorSearchArticle"
+			class="jxust.isp4nm.action.article.SeniorSearchArticleAction">
+			<result name="seniorSearch">/back/article/ArticleList.jsp</result>
+			<result name="seniorSearchFore">/front/article/ArticleList.jsp</result>
+		</action>
+		
+		<action name="DeleteArticle" class="jxust.isp4nm.action.article.DeleteArticleAction">
+			<result>/ArticleList!list2.action</result>
+		</action>
+		
+		<action name="DeleteArticleMore"
+			class="jxust.isp4nm.action.article.DeleteArticleMoreAction">
+			<result>/ArticleList!list2.action</result>
+			<result name="input">/ArticleList!list.action</result>
+		</action>
+		
+		<action name="GetArtYear"
+			class="jxust.isp4nm.action.article.GetYearAction">
+			<result name="getartyear">/back/article/SeniorSearchArticle.jsp</result>
+			<result name="getartyearFore">/front/article/SeniorSearchArticle.jsp</result>
+			<result name="getartyearadd">/back/article/AddArticle.jsp</result>
+		</action>
+	</package>
+	
+</struts>

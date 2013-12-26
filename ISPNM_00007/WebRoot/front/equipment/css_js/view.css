@@ -1,0 +1,21 @@
+@CHARSET "gbk";
+#main table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: 1px solid #123456;
+	border-width: 1px 0 0 1px;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+#main table td{
+	border: 1px solid #123456;
+	border-width: 0 1px 1px 0;
+	padding: 3px 0 1px 0;
+}
+#baseInfo,#parameter{
+	width: 400px;
+}
+div#pic{
+	border: 1px solid #123456;
+	padding: 4px 4px 0 4px;
+}

@@ -1,0 +1,125 @@
+body {
+	background-color: #f2f6ff;
+}
+ {
+ 
+}
+#mainContent{
+	background-color:#ffffff;
+	width: 610px;
+	min-height:530px;
+	margin-left: 7px;
+	background-image: url("E:/picture/web/bjhh.jpg");
+	background-repeat:no-repeat; 
+	background-position: bottom right;
+}
+#mainContent #searchDiv{
+	width:100%;
+	font-size:20;
+	border:1px solid rgb(10,100,130);
+	margin :7px 0 7px 0;
+	padding: 10px 0 10px 0;
+}
+#mainContent #searchDiv img{
+	vertical-align: middle;
+}	
+img {
+	border: none;
+	display: inline;
+	vertical-align: bottom;	
+}
+a{
+	text-decoration: none;
+	color: rgb(30,84,148);
+	font-size: 12px;
+	margin:10px;
+	display: inline-table;
+ }	
+
+.fbBorder,#mainContent td {
+	background-color: #fbfbfb;
+	border-top: 1px solid rgb(10, 100, 130);
+	border-left: 1px solid rgb(10, 100, 130);
+	padding: 2px 4px 2px 4px;
+}
+
+#mainContent #title {
+	font-size: 19px;
+	font-weight: bolder;
+	margin-bottom: 7px;
+	background-color: #eeeeee;
+}
+
+#mainContent table {
+	font-size: 14px;
+	width: 90%;
+	background-color: white;
+	border-bottom: 1px solid rgb(10, 100, 130);
+	border-right: 1px solid rgb(10, 100, 130);
+	border-spacing: 0px;
+	border-collapse: 0px;
+	margin-top: 10px;
+}
+
+.enlargedPic {
+	position: absolute;
+	border: solid 2px #E0EBF9;
+	background: white;
+}
+
+#closePic {
+	position: absolute;
+	top: 5xp;
+	right: 0px;
+	width: 45px;
+}
+
+input,textarea {
+	font-size: 14px;
+	width: 90%;
+	height: 16px;;
+	background-color: white;
+	/*border: 1px solid #D2E3F3;*/
+	border: 1px solid rgb(117, 163, 237);
+	
+}
+
+input:focus,textarea:focus {
+	/*background-color: #ffffdd;*/
+}
+
+button {
+	height: 30px;
+	font-size: 14px;
+	padding-top: 2px;
+	margin: 0px;
+}
+
+.button,.button:hover {
+	border: none;
+	height: 22px;
+	width: 62px;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+.opera {
+	margin: 0px 4px 0px 4px;
+	float: right;
+	color: rgb(102, 170, 204);
+	font-weight: bolder;
+	background-color: white;
+	text-decoration: none;
+}
+
+.opera:hover {
+	background-color: rgb(102, 170, 204);
+	color: white;
+}
+
+.imgButton {
+	border: none;
+	width: 85px;
+	height: 28px;
+	margin: 5px 0px 5px 30px;
+}

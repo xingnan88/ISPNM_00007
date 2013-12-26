@@ -1,0 +1,9 @@
+a {
+	text-decoration: none;
+	color: #0085fa;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #22ff22;
+}

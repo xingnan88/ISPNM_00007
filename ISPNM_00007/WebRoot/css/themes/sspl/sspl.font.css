@@ -1,0 +1,22 @@
+.font {
+	color: #999;
+}
+
+.font:hover {
+	color: #41ab41;
+}
+
+.font:focus {
+	color: #027a02;
+}
+
+.tabFont {
+	color: black;
+}
+.labelFont {
+	color: #516e46;
+}
+
+.disabledFont {
+	color:#999;
+}

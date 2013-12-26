@@ -1,0 +1,50 @@
+
+/*links，友情链接*/
+#links {
+	width: 1020px;
+	margin: 5px auto;
+	background-color: white;
+}
+#links .titlebg {
+	background-image: url("../images/rec-nav.png");
+	background-repeat: repeat-x;
+}
+
+#links .title {
+	background-image: url("../images/star.png");
+}
+
+#links div.title+div {
+	padding: 5px 15px;
+	text-align: center;
+}
+
+#links img {
+	width: 88px;
+	height: 31px;
+	margin: 5px;
+	border: 1px solid rgb(93, 83, 73);
+}
+
+#links img:hover {
+	border: 1px solid rgb(254, 138, 1);
+}
+
+/*policy底部声明*/
+#policy {
+	margin: 20px;
+	text-align: center;
+	color: rgb(51,15,255);;
+	font-size: 12px;
+	border: none;
+}
+
+#policy a {
+	display: inline-table;
+	color: rgb(51,15,255);
+	width: 70px;
+}
+
+#policy a:hover {
+	color: rgb(101, 10, 1);
+}

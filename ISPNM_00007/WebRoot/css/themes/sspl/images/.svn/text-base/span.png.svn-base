@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- saved from url=(0014)about:internet -->
+    <meta name="keywords" content="VMware Player,xFree86 とキーボードのマッピング,X サーバとキーボードのマッピング" />
+    <title>リモート X サーバのキーボード マッピングの構成</title>
+    <link rel="StyleSheet" href="css/help_player.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        // Set reference to top level help frame
+        //
+        var  WWHFrame = WWHGetWWHFrame("", true);
+      // -->
+    </script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+  </head>
+  <body class="" style="" onload="WWHUpdate();" onunload="WWHUnload();" onkeydown="WWHHandleKeyDown((document.all||document.getElementById||document.layers)?event:null);" onkeypress="WWHHandleKeyPress((document.all||document.getElementById||document.layers)?event:null);" onkeyup="WWHHandleKeyUp((document.all||document.getElementById||document.layers)?event:null);">
+    <table align="left" summary="">
+      <tr>
+        <td style="text-align: left; font-family: sans-serif; font-size: 12px"></td>
+      </tr>
+    </table>
+    <br clear="all" />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">VMware Player ヘルプ : <a class="WebWorks_Breadcrumb_Link" href="c_connecting_devices.html#1_22_8_7_6_1">デバイスの接続</a> : <a class="WebWorks_Breadcrumb_Link" href="c_configuring_keyboard_features.html#1_22_8_7_6_1">キーボード機能の構成</a> : <a class="WebWorks_Breadcrumb_Link" href="c_keyboard_mapping_on_linux_host.html#1_22_8_7_6_1">Linux ホストでのキーボードのマッピング</a> : リモート X サーバのキーボード マッピングの構成</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading_4"><a name="1_22_8_7_6_1">リモート X サーバのキーボード マッピングの構成</a></div>
+      <div class="Short_Description"><a name="1_22_8_7_6_3">キーボードが、ローカル X サーバで正常に動作する一方で、同じ仮想マシンをリモート X サーバで実行すると、正常に動作しない場合があります。</a><span class="filepath">.vmx</span> 構成ファイルで、追加のプロパティを設定する必要があります。</div>
+      <div class="Prerequisite_Open">
+        <span style="font-family: Arial, Sans-serif; font-weight: bold;">   </span><a name="1_22_8_7_6_5o">開始する前に</a></div>
+      <div class="List_1_outer" style="margin-left: 0pt;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="List_1_inner" style="width: 18pt; white-space: nowrap;">■ </div>
+            </td>
+            <td width="100%">
+              <div class="List_1_inner"><a name="1_22_8_7_6_5_1_1">ゲスト OS をシャットダウンして仮想マシンをパワーオフにします。</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="List_1_outer" style="margin-left: 0pt;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="List_1_inner" style="width: 18pt; white-space: nowrap;">■ </div>
+            </td>
+            <td width="100%">
+              <div class="List_1_inner"><a name="1_22_8_7_6_5_1_2">リモート X サーバが、PC 上で実行されている XFree86 サーバであることを確認してください。サーバがローカルで、キーボードが正常に動作しない場合は、当社のテクニカル サポートにお問合せください。</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Steps_Open"><a name="1_22_8_7_6_6o">手順</a></div>
+      <div class="Step_1_outer" style="margin-left: 0pt;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="Step_1_inner" style="width: 18pt; white-space: nowrap;">1 </div>
+            </td>
+            <td width="100%">
+              <div class="Step_1_inner"><span class="cmd"><a name="1_22_8_7_6_6_1">仮想マシンをホストしているマシンで、</a></span><span class="filepath">.vmx</span><span class="cmd"> 仮想マシン構成ファイルまたは </span><span class="filepath">~/.vmware/config</span><span class="cmd"> に次のいずれかの行を追加します。</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="List_2_outer" style="margin-left: 18pt;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="List_2_inner" style="width: 18pt; white-space: nowrap;">■ </div>
+            </td>
+            <td width="100%">
+              <div class="List_2_inner"><a name="1_22_8_7_6_6_1_5_2_1_4">VMware Player</a> が XFree86 サーバとして認識しない XFree86 ベースのサーバを使用している場合は、次のプロパティを使用します。</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="List_2_Continued"><span class="userinput"><a name="1_22_8_7_6_6_1_5_2_1-4">xkeymap.usekeycodeMap = "TRUE"</a></span></div>
+      <div class="Body_2"><a name="1_22_8_7_6_6_1_5_2_1_7">このプロパティは、サーバ タイプに関わらず常にキー コード マッピングを使用するように </a>VMware Player に指示します。</div>
+      <div class="List_2_outer" style="margin-left: 18pt;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="List_2_inner" style="width: 18pt; white-space: nowrap;">■ </div>
+            </td>
+            <td width="100%">
+              <div class="List_2_inner"><a name="1_22_8_7_6_6_1_5_2_2_4">VMware Player</a> が XFree86 サーバとしてリモート サーバを認識する場合は、次のプロパティを使用します。</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="List_2_Continued"><span class="userinput"><a name="1_22_8_7_6_6_1_5_2_2-4">xkeymap.usekeycodeMapIfXFree86 = "TRUE"</a></span></div>
+      <div class="Body_2"><a name="1_22_8_7_6_6_1_5_2_2_7">このプロパティは、XFree86 サーバの使用時は、リモートであってもキー コード マッピングを使用するように </a>VMware Player に指示します。</div>
+      <div class="Step_1_outer" style="margin-left: 0pt;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="Step_1_inner" style="width: 18pt; white-space: nowrap;">2 </div>
+            </td>
+            <td width="100%">
+              <div class="Step_1_inner"><span class="cmd"><a name="1_22_8_7_6_6_2">ファイルを保存して閉じます。</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <script type="text/javascript" language="JavaScript1.2">
+        <!--
+          // Clear related topics
+          //
+          WWHClearRelatedTopics();
+
+          document.writeln(WWHRelatedTopicsInlineHTML());
+        // -->
+      </script>
+    </blockquote>
+    <div class="copyright_info" style="font-family: sans-serif; font-size: 8pt; color:gray">
+      <a href="#" onclick="WWHFrame.WWHControls.fClickedEmail()">フィードバックを送信する</a> &nbsp;| &nbsp; <a href="http://vmware.com/jp/support/" target="_blank">テクニカル サポート</a> &nbsp;| &nbsp; Copyright © <span>1998-2010</span> VMware, Inc. All rights reserved. 本製品は、米国著作権法および米国知的財産法ならびに国際著作権法および国際知的財産法によって保護されています。VMware 製品には、<a href="http://www.vmware.com/go/patents-jp" target="_blank">http://www.vmware.com/go/patents-jp</a> に列記する、1 つ以上の特許が適用されます。
+    </div>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag() + WWHALinksDivTag());
+      // -->
+    </script>
+  </body>
+</html>                                                                                                                                                                                                       cǯ[Xp���K4�:��-_~��߇��d}c��u:�nIe�kl�w�r �Xj��CȘ�2�=7e�Og����֣ϏV����چ�
+�Ko���"i@v�N���)BqU��{��!�Ε55�$�ml�����Ϙ�]h�u:f�?��Q
+������I�@��+F��2���c^����`�b� �8Si�:�a�*]=�]��K���a� ���5t1HJ�kz����娸>�ݮ����M[�.)/��4<���Z��6��Q���_O���)�&�rI#�7Տ�@���,p6�L�@�׼�B0�
+�9+��{:�ks	��74ڊ,������B
+<Uv$�\�_�dVSm�54�)�����g����U��s���P	k��@� Ǹ�F�#��	���l.��c>��-�1�D�i��5+#̭4��n�-k{�^�c#���W�B��j�f

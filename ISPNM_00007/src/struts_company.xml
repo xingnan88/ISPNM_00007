@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="company" extends="struts-default">
+		<action name="AddCompany"
+			class="jxust.isp4nm.action.company.AddCompanyAction">
+			<result name="addCompany">/CompanyList!list2.action</result>
+			<result name="input">/back/company/AddCompany.jsp</result>
+		</action>
+		
+		<action name="CompanyList" class="jxust.isp4nm.action.company.CompanyListAction">
+			<result name="list">/back/company/CompanyList.jsp</result>
+			<result name="list2">/back/company/CompanyList.jsp</result>
+			<result name="listFore">/front/company/CompanyList.jsp</result>
+		</action>
+		
+		<action name="CompanyDetail" class="jxust.isp4nm.action.company.CompanyDetailAction">
+			<result name="detail">/back/company/CompanyDetail.jsp</result>
+			<result name="detailFore">/front/company/CompanyDetail.jsp</result>
+		</action>
+		
+		<action name="UpdateCompany"
+			class="jxust.isp4nm.action.company.UpdateCompanyAction">
+			<result name="searchone">/back/company/UpdateCompany.jsp</result>
+			<!-- <result name="update">/CompanyList!list2.action</result> -->
+			<result name="input">/UpdateCompany!searchone.action</result>
+		</action>
+		
+		<action name="SearchCompany"
+			class="jxust.isp4nm.action.company.SearchCompanyAction">
+			<result name="searchCompany">/back/company/CompanyList.jsp</result>
+			<result name="searchCompanyFore">/front/company/CompanyList.jsp</result>
+		</action>
+		
+		<action name="SeniorSearchCompany"
+			class="jxust.isp4nm.action.company.SeniorSearchCompanyAction">
+			<result name="seniorSearch">/back/company/CompanyList.jsp</result>
+			<result name="seniorSearchFore">/front/company/CompanyList.jsp</result>
+		</action>
+		
+		<action name="DeleteCompany" class="jxust.isp4nm.action.company.DeleteCompanyAction">
+			<result>/CompanyList!list2.action</result>
+		</action>
+		
+		<action name="DeleteCompanyMore"
+			class="jxust.isp4nm.action.company.DeleteCompanyMoreAction">
+			<result>/CompanyList!list2.action</result>
+			<result name="input">/CompanyList!list.action</result>
+		</action>
+	</package>
+	
+</struts>

@@ -1,0 +1,30 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #444444; LINE-HEIGHT: 180%; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #444444; LINE-HEIGHT: 180%; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 12px; COLOR: #0099ff; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+.leftTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FILTER: Glow(Color=blue, Strength=2); COLOR: #000000
+}
+.listMid {
+	FONT-SIZE: 12px; COLOR: #444444; LIST-STYLE-TYPE: square
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #444444; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #444444; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #0099ff; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 12px; COLOR: #444444; TEXT-DECORATION: underline
+}
+.imgshadow {
+	FILTER: Shadow(Color=#444444, Direction=120)
+}

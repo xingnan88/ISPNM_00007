@@ -1,0 +1,56 @@
+.text {
+	width: 295px;
+	background: url("images/queryText.png") repeat-x white 0px 0px;
+}
+
+.text:hover {
+	background: url("images/queryText.png") repeat-x #fff9b6 0px 0px;
+}
+
+.queryText {
+	width: 415px;
+	height: 22px;
+	background: url("images/queryText.png") repeat-x white 0px 0px;
+}
+
+.submit {
+	background: url("images/button.png") white repeat-x;
+	color: black;
+	border: none;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background: url("images/button.png") #b3ffb3 repeat-x;
+}
+
+.submit:active {
+	background: url("images/button.png") #ffb7b3 repeat-x;
+}
+
+.textArea {
+	width: 295px;
+	font-family: serif;
+	font-size: 1em;
+	padding: 5px;
+	background: url("images/textArea.png") repeat-x white;
+}
+
+.textArea:hover {
+	background: url("images/textArea.png") repeat-x #fff9b6;
+}
+
+.checkbox {
+	cursor: pointer;
+}
+
+.text,.submit,.button,.queryText,.textArea {
+	vertical-align: middle;
+	font-family: serif;
+	font-size: 1em;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border: 1px solid #abacab;
+}

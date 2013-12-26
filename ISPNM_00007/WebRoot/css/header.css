@@ -1,0 +1,111 @@
+body {
+	background-image: url('../images/bg.png');
+	background-color: rgb(234, 181, 169);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	font-size: 13px;
+}
+
+body>div,body>table { 
+	border: 1px solid rgb(255, 55, 20);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a {
+	text-decoration: none;
+	xfont-size: 12px;
+	color: black;
+}
+
+.title {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 35px;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 6px;
+	vertical-align: middle;
+}
+
+.titlebg {
+	background-image: url('../images/title.png');
+	background-position: right 0;
+	background-repeat: repeat-y;
+	border-bottom: 2px solid rgb(253, 182, 56);
+	height: 27px;
+}
+.titlebg2{
+	background-image: url('../images/rec-nav.png');
+	background-repeat: repeat-x;
+	background-position: left 0;
+	border-bottom: 2px solid rgb(253, 182, 56);
+	height: 27px;
+}
+span.i {
+	display: block;
+	width: 230px;
+	height: 20px;
+	background-image: url('../images/i10.png');
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+	margin: 2px 0px 2px 2px;
+	padding-left: 11px;
+	overflow: hidden;
+}
+button {
+	border: none;
+	color: white;
+	width: 51px;
+	height: 22px;
+	background-image: url('../images/btn.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+/*Í·²¿ºá·ù*/ /*banner*/
+div#banner {
+	width: 1020px;
+	height: 125px;
+	background-color: white;
+	margin: 0 auto;
+	background-image: url('../isp4nm-img/isp4nm-banner70.png');
+	background-repeat: no-repeat;
+	background-position: 3px 10px;
+}
+
+#navigation {
+	width: 950px;
+	margin: auto;
+}
+
+#navigation tr {
+	font-size: 13px;
+	font-family: "ºÚÌå";
+	height: 32px;
+	color: white;
+	background-image: url('../images/nav-c.png');
+	background-repeat: repeat-x;
+}
+
+#navigation td.item {
+	text-align: center;
+	background-image: url('../images/nav-separator.gif');
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+td.nav-l,#nav-l {
+	width: 36px;
+	background-image: url('../images/nav-l.png');
+	background-repeat: no-repeat;
+}
+
+td.nav-r,#nav-r {
+	width: 4px;
+	background-image: url('../images/nav-r.png');
+	background-repeat: no-repeat;
+}

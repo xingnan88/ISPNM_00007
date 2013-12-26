@@ -1,0 +1,943 @@
+an class="literal">blur( )</span> method to
+		blatantly focusable elements, such as text <span
+
+		class="literal">input</span>
+		and <span class="literal">textarea</span> elements. Assigning the
+
+		attribute
+		<span class="literal">onfocus="this.blur( );"</span> to a text
+		<span class="literal">input</span> element, for instance, is a crude
+
+		but
+		effective backward-compatible way to largely disable a field for
+		browsers that do not provide genuine element disabling.
+		</p>
+									</td>
+								</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+								<tr>
+									<td colspan="2"><p>			Use
+
+		<span class="literal">blur( )</span> and <span class="literal">focus(
+
+		)</span>
+		methods in moderation on the same page. You can inadvertently trigger
+		endless loops of blurring and focusing if alert dialog boxes are
+		involved along the way. Moreover, be aware that when you invoke the
+		<span class="literal">blur( )</span> method on one object, some other
+
+		object
+		(perhaps the <span class="literal">window</span> object) receives an
+		<span class="literal">onfocus</span> event.
+		</p>
+									</td>
+	</tr>
+
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="parameters"><span class="title">Parameters</span></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>			None.</p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="returnedvalue"><span class="title">Returned Value</span></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>			None.</p>
+							</td>
+						</tr>
+					</table>
+		</div>
+		<div id="border">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">border</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">6</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Specifies the thickness of the border around the table (in pixels).
+This is the default 3-D-look border and should not be confused with
+borders created with style sheets.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").border = 4;</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			An integer value. A setting of zero removes the border entirely.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			<span class="literal">0</span></p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="borderColor">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">borderColor</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">n/a</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">n/a</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Specifies the color of the table's border. Internet
+Explorer applies the color to all four lines that make up the
+interior border of a cell. Therefore, colors of adjacent cells do not
+collide.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").borderColor = "salmon";</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			A hexadecimal triplet or plain-language color name. A setting of
+empty is interpreted as <span class="literal">"#000000"</span> (black). See
+Appendix A for acceptable plain-language color
+names.
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Varies with operating system. </p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="borderColorDark, borderColorLight">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">borderColorDark, borderColorLight</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">n/a</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">n/a</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>The 3-D effect of table borders in Internet Explorer is created by
+careful positioning of light and dark lines around the
+page's background or default color. You can
+independently control the colors used for the dark and light lines by
+assigning values to the <span class="literal">borderColorDark</span> (left and
+top edges of the cell) and <span class="literal">borderColorLight</span> (right
+and bottom edges) properties.
+</p>
+							</td>
+						</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+						<tr>
+							<td colspan="2"><p>			Typically, you should assign complementary colors to the pair of
+properties. There is also no rule that says you must assign a dark
+color to <span class="literal">borderColorDark</span>. The attributes merely
+control a well-defined set of lines so you can predict which lines of
+the border change with each attribute.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").borderColorDark = "blue";
+document.getElementById("myTable").borderColorLight = "cornflowerblue";</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			A hexadecimal triplet or plain-language color name. A setting of
+empty is interpreted as <span class="literal">"#000000"</span> (black). See
+Appendix A for acceptable plain-language color
+names.
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Varies with operating system. </p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="caption">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">caption</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">6</span> IE <span class="emphasis">4(Win)/5(Mac)</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read-only&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Returns a reference to a <span class="literal">caption</span> element nested
+inside the table. From this reference you can access properties and
+methods of the <span class="literal">caption</span> object. In Netscape 6, you
+can create a new <span class="literal">caption</span> element, and assign that
+new element's reference to the
+<span class="literal">caption</span> property of a <span class="literal">table</span>,
+making the property read/write in that browser (although you really
+should be using the <span class="literal">createCaption( )</span> method). For
+all browsers, however, you can modify properties of the
+<span class="literal">caption</span> object returned by the
+<span class="literal">caption</span> property.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>var capText = document.getElementById("myTable").caption.innerHTML;</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Object reference.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			None. </p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="cellPadding">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">cellPadding</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">6</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Specifies the amount of empty space between the (visible or
+invisible) border of a table cell and the content of the cell. Note
+that this property applies to space <span class="emphasis">inside</span> a
+cell. Minor adjustments to this property are not as noticeable when
+the table does not also display borders (in which case the
+<span class="literal">cellSpacing</span> property can assist in adjusting the
+space between cells).
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").cellPadding = "15";</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			A string value for a length in pixels or percentage.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			<span class="literal">0</span></p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="cells">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">cells</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">n/a</span> IE <span class="emphasis">5(Win)</span> DOM <span class="emphasis">n/a</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read-only&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Returns a collection of all <span class="literal">td</span> elements inside the
+table. Entries in the array are in source code order of
+<span class="literal">td</span> elements. This property is more widely
+available for a <span class="literal">tr</span> element (one row at a time).
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>var totCells = document.getElementById("myTable").cells.length;</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Reference to a <span class="literal">cells</span> collection object.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Array of zero length.</p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="cellSpacing">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">cellSpacing</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">6</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Specifies the amount of empty space between the outer edges of each
+table cell. If the table has a border, the effect of setting
+<span class="literal">cellSpacing</span> is to define the thickness of borders
+rendered between cells. Even without a visible border, the
+readability of a table often benefits from cell spacing, or a
+combination of cell spacing and cell padding.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").cellSpacing = "5";</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			A string value for a length in pixels or percentage.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			<span class="literal">0</span> (with no table border); <span class="literal">2</span>
+(with table border).
+</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="clientHeight, clientWidth">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+						<tr><td valign="top" class="name">clientHeight, clientWidth</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">7</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">n/a</span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" nowrap class="usage"><p class="literal"></p>
+							</td><td valign="top" nowrap class="requirements"><span class="emphasis">Read-only</span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="description"><p>			Broadly speaking, these provide the height and width of the
+		element's content, but with minor variations with
+		respect to element padding among various operating system versions of
+		IE and compatibility modes controlled by the
+		<span class="literal">DOCTYPE</span> declaration. Not available for all element
+		types in IE for Macintosh. For Netscape 7, values are zero except
+		when an element's content overflows the viewable
+		area, in which case the values reveal the dimensions of the viewable
+		area (e.g., the browser window's content region for
+		the <span class="literal">document.body</span> element). See the Section 9.2 at the beginning of
+		this chapter for details.
+		</p>
+									</td>
+	</tr>
+
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td><span class="programlisting"><pre>var midHeight = document.body.clientHeight/2;</pre>
+								</span></td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>			Integer pixel value.</p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>			<span class="literal">0</span> </p>
+							</td>
+						</tr>
+					</table>
+		</div>
+		<div id="cols">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">cols</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">n/a</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Specifies the number of columns of the table. The corresponding
+IE-specific <span class="literal">cols</span> attribute assists the browser in
+preparation for rendering the table. Without this attribute, the
+browser relies on its interpretation of all downloaded
+<span class="literal">tr</span> and <span class="literal">td</span> elements to determine
+how the table is to be divided. You cannot change the column makeup
+of a table from this property, despite its read/write status. See
+also the <span class="literal">col</span> object earlier in this chapter
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").cols = 5;</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Integer.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			None.</p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="dataPageSize">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">dataPageSize</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">n/a</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">n/a</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Used with IE data binding, this property advises the browser how many
+instances of a table row must be rendered to accommodate the number
+of data source records set by this attribute. See <span class="literal">lastPage(
+)</span>, <span class="literal">nextPage( )</span>, and
+<span class="literal">previousPage( )</span> methods for navigating through
+groups of records.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("inventoryTable").dataPageSize = 10;</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Integer.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			None. </p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="focus( )">
+					<table cellpadding="0" cellspacing="0"
+
+		border="0" width="100%" class="main">
+						<tr><td valign="top"
+
+		class="name">focus( )</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">2</span> IE <span
+
+		class="emphasis">3</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" nowrap
+
+		class="usage"><p class="literal"></p>
+							</td><td valign="top" nowrap
+
+		class="requirements"></td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="description">
+								<p>			Gives
+
+		focus from the current object, at which time the
+		object's <span class="literal">onfocus</span> event fires.
+		Note that the range of elements capable of focus and blur (both the
+		event and method) is limited in all browsers except for more recent
+		versions of IE (see the shared <span class="literal">tabindex</span>
+
+		attribute
+		in Chapter 8). Most reliably for backward
+		compatibility, apply the <span class="literal">focus( )</span> method
+
+		to
+		blatantly focusable elements, such as text <span
+
+		class="literal">input</span>
+		and <span class="literal">textarea</span> elements.
+		</p>
+									</td>
+								</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+								<tr>
+									<td colspan="2"><p>			To give
+
+		a text box focus and pre-select all the text in the box, use
+		the sequence of <span class="literal">focus( )</span> and <span
+
+		class="literal">select(
+		)</span> methods on the element. If this sequence is to occur
+		after windows change (such as after an alert dialog box closes),
+		place the methods in a separate function, and invoke this function
+		through the <span class="literal">setTimeout( )</span> method following
+
+		the
+		<span class="literal">alert( )</span> method for the dialog. This
+
+		allows
+		IE/Windows to sequence statement execution correctly.
+		</p>
+									</td>
+	</tr>
+
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="parameters"><span class="title">Parameters</span></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>			None. </p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2"
+
+		class="returnedvalue"><span class="title">Returned Value</span></td>
+						</tr>
+						<tr>
+							<td colspan="2"><p>			None.</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+		<div id="frame">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">frame</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">6</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">1</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Indicates which (if any) sides of a table's outer
+border (set with the <span class="literal">border</span> attribute or
+<span class="literal">border</span> property) are rendered. This property does
+not affect the interior borders between cells.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("orderForm").frame = "hsides";</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Any one case-insensitive frame constant (as a string):</p>
+<dl>
+
+<dt><span class="LITERAL">above</span></dt>
+<dd>
+<p>Renders border along top edge of table only</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">below</span></dt>
+<dd>
+<p>Renders border along bottom edge of table only</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">border</span></dt>
+<dd>
+<p>Renders all four sides of the border (same as <span class="LITERAL">box</span>)</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">box</span></dt>
+<dd>
+<p>Renders all four sides of the border (same as
+<span class="LITERAL">border</span>)
+</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">hsides</span></dt>
+<dd>
+<p>Renders borders on top and bottom edges of table only (a nice look)</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">lhs</span></dt>
+<dd>
+<p>Renders border on left edge of table only</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">rhs</span></dt>
+<dd>
+<p>Renders border on right edge of table only</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">void</span> </dt>
+<dd>
+<p>Hides all borders (default in HTML 4)</p>
+</dd>
+
+
+
+<dt><span class="LITERAL">vsides</span></dt>
+<dd>
+<p>Renders borders on left and right edges of table only</p>
+</dd>
+
+</dl>					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			<span class="literal">void</span> (when <span class="literal">border=0</span>);
+<span class="literal">border</span> (when <span class="literal">border</span> is any
+other value)
+</p>
+					</td>
+				</tr>
+			</table>
+		</div><div id="height, width">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+				<tr><td valign="top" class="name">height, width</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">6 (width only)</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">1</span> <span class="emphasis">(width only)</span>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap class="usage"><p class="literal"></p>
+					</td><td valign="top" nowrap class="requirements">Read/Write&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="description">
+						<p>Specify the height and width in pixels of the element. Changes to
+these values are immediately reflected in reflowed content on the
+page. Only the <span class="literal">width</span> property is available in
+Netscape 6 (and the W3C DOM), as the table's height
+is considered to be the sum of the highest cell in each row.
+</p>
+												</td>
+</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><span class="programlisting"><pre>document.getElementById("myTable").height = 250;</pre>
+						</span></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="value"><span class="title">Value</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			Integer.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" nowrap colspan="2" class="default"><span class="title">Default</span></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>			None. </p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="recordNumber">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main">
+						<tr><td valign="top" class="name">recordNumber</td><td valign="top" nowrap class="compatibility">NN <span class="emphasis">n/a</span> IE <span class="emphasis">4</span> DOM <span class="emphasis">n/a</span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" nowrap class="usage"><p class="literal"></p>
+							</td><td valign="top" nowrap class="requirements"><span class="emphasis">Read-only</span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="description"><p>			Used with IE data binding, returns an integer representing the record
+		within the data set that generated the element (i.e., an element
+		whose content is filled via data binding). Values of this property
+		can be used to extract a specific record from an Active Data Objects
+		(ADO) record set (see <span class="literal">recordset</span> property).
+		Although this property is defined for all IE element objects, the
+		other properties related to data binding belong to a subset of
+		elements.
+		</p>
+									</td>
+	</tr>
+
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="example"><span class="title">Example</span></td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td><span class="programlisting"><pre>&lt;script for="tableTemplate" event="onclick"&gt;
+		    myDataCollection.recordset.absoluteposition = this.recordNumber;
+		    ...
+		&lt;/script&gt;</pre>
+								</span></td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="CLEARSEPARATION">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top" colspan="2" class="value"><span class="title">Value</span></td

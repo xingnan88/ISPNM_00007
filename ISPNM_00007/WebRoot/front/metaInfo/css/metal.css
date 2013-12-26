@@ -1,0 +1,32 @@
+
+td{
+	height:38px;
+}
+td.w{
+	text-align: right;
+	border-left: 0px;
+}
+td.w1 {
+	width:"25%";
+	text-align: right;
+	border-left: 0px;
+}
+td.w2 {
+	width:"10%";
+	text-align: center;
+	color: #EEB422;
+}
+td.w3 {
+	width:"16%";
+	text-align: right;
+}
+.cell {
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+div{
+	font-family: "ËÎÌו";
+	font-size: 18px;
+	text-indent: 2em;
+	color: #EEB422;
+}

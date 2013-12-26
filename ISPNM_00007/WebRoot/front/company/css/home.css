@@ -1,0 +1,401 @@
+BODY {
+	FONT-SIZE: 9pt; COLOR: #606060;FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+}
+DIV {
+	FONT-SIZE: 9pt; COLOR: #606060;FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+}
+A:link {
+	FONT-SIZE: 9pt; COLOR: #606060; LINE-HEIGHT: 13pt; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 9pt; COLOR: #606060; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #EE7313 ; TEXT-DECORATION: underline
+}
+.kbhide {
+	DISPLAY: none
+}
+A.T04:link
+{
+    COLOR: #41751A;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+A.T04:visited
+{
+    COLOR: #41751A;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none
+}
+A.T04:hover
+{
+    COLOR: #EE7313;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: underline
+}
+A.T04:active
+{
+    COLOR: #EE7313;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none
+}
+
+A.T05:link
+{
+    COLOR: #408DDF;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+A.T05:visited
+{
+    COLOR: #408DDF;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+A.T05:hover
+{
+    COLOR: #09B406;
+    FONT-FAMILY: "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: underline
+}
+A.T05:active
+{
+    COLOR: #09B406;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+
+A.TBottom:link
+{
+    COLOR: #ffffff;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+A.TBottom:visited
+{
+    COLOR: #ffffff;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+A.TBottom:hover
+{
+    COLOR: #000000;
+    FONT-FAMILY: "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none
+}
+A.TBottom:active
+{
+    COLOR: #000000;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+
+A.Subject:link
+{
+    COLOR: #154A76;
+	FONT-SIZE: 10pt;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none
+}
+A.Subject:visited
+{
+    COLOR: #154A76;
+	FONT-SIZE: 10pt;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none
+}
+A.Subject:hover
+{
+    COLOR: #154A76;
+	FONT-SIZE: 10pt;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: underline
+}
+A.Subject:active
+{
+    COLOR: #154A76;
+	FONT-SIZE: 10pt;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none
+}
+
+
+
+
+A.head:link
+{
+    COLOR: #FFFFFF;
+	FONT-SIZE: 9pt;
+    FONT-FAMILY:  "Arial", "宋体","Times New Roman";
+    TEXT-DECORATION: none;
+	font-weight:bold;
+}
+A.head:visited
+{
+    COLOR: #FFFFFF;
+	FONT-SIZE: 9pt;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none;
+	font-weight:bold;
+}
+A.head:hover
+{
+    COLOR: #FFFFFF;
+	FONT-SIZE: 9pt;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none;
+	font-weight:bold;
+}
+A.head:active
+{
+    COLOR: #FFFFFF;
+	FONT-SIZE: 9pt;
+    FONT-FAMILY:  "Arial","宋体", "Times New Roman";
+    TEXT-DECORATION: none;
+	font-weight:bold;
+}
+
+
+.btnButton
+{
+    BORDER-RIGHT: 1pt ridge;
+    BORDER-TOP: 1pt ridge;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: 1pt ridge;
+    WIDTH: 44pt;
+    CURSOR: hand;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: 1pt ridge;
+    FONT-FAMILY: 宋体;
+    HEIGHT: 15pt;
+    BACKGROUND-COLOR: #FD8000;
+    TEXT-ALIGN: center;
+    FONT-VARIANT: small-caps
+}
+INPUT
+{
+    BORDER-TOP-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    FONT-SIZE: 12px;
+    BORDER-LEFT-COLOR: #D1CFD0;
+    BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-BOTTOM-COLOR: #D1CFD0;
+    BORDER-TOP-COLOR: #D1CFD0;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-RIGHT-COLOR: #D1CFD0;
+}
+.imgstyle {  border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.liebiao { 
+    BORDER-RIGHT: gray 0px solid;
+    BORDER-TOP: 0px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: white 0px solid;
+    COLOR: black;
+    BORDER-BOTTOM: black 1px solid;
+    FONT-FAMILY: "宋体";
+    BACKGROUND-COLOR: #FFFFFF; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px
+}
+.TextBox
+{
+    BORDER-RIGHT: #B1B1B1 1px solid;
+    BORDER-TOP: #B1B1B1 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #B1B1B1 1px solid;
+    COLOR: black;
+    BORDER-BOTTOM: #B1B1B1 1px solid;
+    FONT-FAMILY: "宋体";
+    BACKGROUND-COLOR: white
+}
+.imgstyle1 {  border: #ABABAB; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.menutb {  FONT-SIZE: 11pt; FONT-FAMILY:  "Arial","宋体", "Times New Roman";font-weight: bold;COLOR: #FFFFFF; }
+.titleFont {  font-weight: bold; color: #FF8401}
+.Pagebottom { background:#B51903; color: #FFFFFF; text-align: center; vertical-align: middle; font-family: "Geneva", "Arial", "Helvetica", "san-serif"}
+.Pagebottom2 { background:#FECF9B; color: #FFFFFF; text-align: center; vertical-align: middle; font-family: "Geneva", "Arial", "Helvetica", "san-serif"}
+.Pagebottom3 { background:#FEF9E3; color: #FFFFFF; text-align: center; vertical-align: middle; font-family: "Geneva", "Arial", "Helvetica", "san-serif"}
+.subjecttitle td{ FONT-SIZE: 11pt; FONT-FAMILY:  "Arial","宋体", "Times New Roman";font-weight: bold;COLOR: #FFFFFF;vertical-align:center;}
+.subjecttitle A:link {
+	FONT-SIZE: 9pt; 
+	COLOR: #FFFFFF; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subjecttitle A:visited {
+	FONT-SIZE: 9pt; 
+	COLOR: #FFFFFF; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subjecttitle A:active {
+	FONT-SIZE: 9pt; 
+	COLOR: #FFFFFF; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subjecttitle A:hover {
+	FONT-SIZE: 9pt; 
+	COLOR: #EE7313; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subject2title td{ FONT-SIZE: 11pt; FONT-FAMILY:  "Arial","宋体", "Times New Roman";font-weight: bold;COLOR: #D52F19;vertical-align:middle;letter-spacing:0.5mm;
+filter:
+  Dropshadow(offx=-1,offy=-1,color=#FFFFFF)
+  Dropshadow(offx=-1,offy=-1,color=#FFFFFF)
+  Dropshadow(offx=0,offy=0,color=#BEBCBD)
+  Dropshadow(offx=0,offy=0,color=#BEBCBD);}
+.subject2title A:link {
+	FONT-SIZE: 9pt; 
+	COLOR: #D52F19; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subject2title A:visited {
+	FONT-SIZE: 9pt; 
+	COLOR: #D52F19; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subject2title A:active {
+	FONT-SIZE: 9pt; 
+	COLOR: #D52F19; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+.subject2title A:hover {
+	FONT-SIZE: 9pt; 
+	COLOR: #D52F19; 
+	TEXT-DECORATION: none;
+	vertical-align: middle; 
+	text-align:center;
+	font-weight:normal;
+}
+
+.Pagebottom3 { 
+text-align: center; 
+vertical-align: middle; 
+color:#4C4940;
+line-height:130%;
+}
+.Pagebottom3 A:link {
+	FONT-SIZE: 9pt; 
+	COLOR: #4C4940; 
+	TEXT-DECORATION: none;
+}
+.Pagebottom3 A:visited {
+	FONT-SIZE: 9pt; 
+	COLOR: #4C4940; 
+	TEXT-DECORATION: none;
+}
+.Pagebottom3 A:active {
+	FONT-SIZE: 9pt; 
+	COLOR: #4C4940; 
+	TEXT-DECORATION: none
+}
+.Pagebottom3 A:hover {
+	FONT-SIZE: 9pt; 
+	COLOR: #EE7313; 
+	TEXT-DECORATION: none;
+}
+.menutb td{
+text-align: center; 
+vertical-align: middle; 
+font-weight: bold;
+COLOR: #FFFFFF;
+FONT-SIZE:9pt;
+}
+.menutb A:link {
+	FONT-SIZE: 11pt; 
+	COLOR: #FFFFFF; 
+	TEXT-DECORATION: none;
+	font-weight:bold;
+}
+.menutb A:visited {
+	FONT-SIZE: 11pt; 
+	COLOR: #FFFFFF; 
+	TEXT-DECORATION: none;
+	font-weight:bold;
+}
+.menutb A:active {
+	FONT-SIZE: 11pt; 
+	COLOR: #FFFFFF; 
+	TEXT-DECORATION: none
+}
+.menutb A:hover {
+	FONT-SIZE: 11pt; 
+	COLOR: #EE7313; 
+	TEXT-DECORATION: none;
+	font-weight:bold;
+}
+.contenttable td{
+vertical-align:middle;
+text-align:left;
+}
+.imgtd{
+text-align:center;
+}
+#CourseItemList li.ItemOFF 
+{
+   float:left;
+   background-repeat: no-repeat;
+   background-position: left top;   
+   margin:0;
+   padding:0;
+   margin-right:2px;
+   padding-left:6px;
+}
+#CourseItemList .ItemOFF a
+{
+   display:block;
+   background-repeat: no-repeat;
+   background-position: right top;
+   padding-top:10px;
+   padding-bottom:3px;
+   padding-left:8px;
+   padding-right:14px;
+   text-decoration:none;
+}
+#CourseItemList li.ItemON 
+{
+   float:left;
+   background-repeat: no-repeat;
+   background-position: left top;   
+   margin:0;
+   padding:0;
+   margin-right:2px;
+   padding-left:6px;
+}
+#CourseItemList .ItemON a 
+{
+   display:block;
+   background-repeat: no-repeat;
+   background-position: right top;
+   padding-top:8px;
+   padding-bottom:4px;
+   padding-left:10px;
+   padding-right:16px;
+   text-decoration:none;
+   color:#000;
+   font-weight:bold;
+   font-size:13px;
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<constant name="struts.objectFactory" value="spring" />
+
+	<constant name="struts.i18n.encoding" value="gb2312"></constant>
+
+	<constant name="struts.multipart.saveDir" value="c:\"></constant>
+	<!--
+		上传视频的临时文件存放
+	-->
+
+	<constant name="struts.multipart.maxSize" value="104857600" />
+	<!--
+		上传视频的最大值100M
+	-->
+
+
+	<package name="jxustmppFront" namespace="/front/jxustmpp"
+		extends="struts-default">
+
+		<!-- 前台首页 -->
+		<action name="list" class="mppAction" method="findAll">
+			<result name="success">/front/jxustmpp/mpplist.jsp</result>
+		</action>
+		<!-- 播放采矿视频 -->
+		<action name="play" class="mppAction" method="playById">
+			<result name="success">/front/jxustmpp/mppplay.jsp</result>
+			<result name="error">/front/jxustmpp/error.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="jxustmppBack" namespace="/back/jxustmpp"
+		extends="struts-default" >
+		<!-- 上传视频 -->
+		<action name="upload" class="uploadAction">
+		    
+			<result name="success">/back/jxustmpp/complete.jsp</result>
+			<param name="uploadPath">upload/</param><!-- 上传视频存放路径 -->
+			<param name="ffmpegPath">tools/ffmpeg.exe</param><!-- 视频截图工具 -->
+			<param name="imgPath">upload/images/</param><!-- 上传视频截图存放路径 -->
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+		<!-- 添加采矿方法 -->
+		<action name="add" class="mppAction" method="add">
+			<result name="success">/back/jxustmpp/upload.jsp</result>
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+		<action name="mpp_*" class="mppAction" method="{1}">
+			<result name="success" type="redirect">listmpp.action</result>
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+		<!-- 后台查看采矿方法 -->
+		<action name="listmpp" class="mppAction" method="findAll">
+			<result name="success">/back/jxustmpp/list.jsp</result>
+		</action>
+
+		<!-- 获得单个采矿方法的信息 -->
+		<action name="mpp*" class="mppAction" method="findById">
+			<result name="success">/back/jxustmpp/{1}.jsp</result>
+			<result name="error">/back/jxustmpp/error.jsp</result>
+		</action>
+
+	</package>
+
+
+</struts>    
